@@ -1,0 +1,77 @@
+@use '../variables' as *;
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+  display: flex;
+  align-items: baseline;
+}
+
+.left-nav {
+
+  > ul {
+    > li {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-right: 25px;
+      padding: 5px;
+    }
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.right-nav  {
+  > ul {
+    > li {
+      > button {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 5px;
+        margin-right: 3px;
+        padding: 7px;
+        background-color: rgb(46, 46, 155);
+      }
+    }
+
+    > li:last-of-type {
+      > button {
+        font-size: 14px;
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  
+  i {
+    // dunno, maybe shoulda used this, but our stuff looks about right?
+  }
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+  background-color: $lightest-gray;
+}
+
+.right-nav > ul > li > button:hover {
+  background-color: rgb(51, 111, 164);
+}
+
+
+.right-nav > ul > li > button#last:hover {
+  background-color: $lightest-gray;
+}
+
+    
